@@ -1,4 +1,4 @@
-## 📌 Session 1
+## 📌 Session 2
 
 ## Part 1: Frontend – Student Affairs System
 
