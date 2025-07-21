@@ -1,0 +1,14 @@
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\summitionNumbers.exe
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\summitionNumbers.deps.json
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\summitionNumbers.runtimeconfig.json
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\summitionNumbers.dll
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\summitionNumbers.pdb
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.GeneratedMSBuildEditorConfig.editorconfig
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.AssemblyInfoInputs.cache
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.AssemblyInfo.cs
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.csproj.CoreCompileInputs.cache
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.dll
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\refint\summitionNumbers.dll
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.pdb
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\summitionNumbers.genruntimeconfig.cache
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\ref\summitionNumbers.dll

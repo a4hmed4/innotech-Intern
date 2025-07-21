@@ -1,0 +1,14 @@
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\C#_code_1.exe
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\C#_code_1.deps.json
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\C#_code_1.runtimeconfig.json
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\C#_code_1.dll
+D:\innotech_react\codes\C#\C#_code_1\bin\Debug\net8.0\C#_code_1.pdb
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.AssemblyInfoInputs.cache
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.AssemblyInfo.cs
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.csproj.CoreCompileInputs.cache
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.dll
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\refint\C#_code_1.dll
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.pdb
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\C#_code_1.genruntimeconfig.cache
+D:\innotech_react\codes\C#\C#_code_1\obj\Debug\net8.0\ref\C#_code_1.dll

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAMS - Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body
+    style="
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    "
+  >
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background: linear-gradient(135deg, #5a77f8 0%, #000e5f 100%)"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold"
+          href="main.html"
+          style="font-size: 1.5rem"
+        >
+          <i class="fas fa-graduation-cap me-2"></i>SAMS - InnoTech
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="main.html"
+                style="color: white !important"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="students.html"
+                style="color: rgba(255, 255, 255, 0.8) !important"
+                >Students</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="courses.html"
+                style="color: rgba(255, 255, 255, 0.8) !important"
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="grades.html"
+                style="color: rgba(255, 255, 255, 0.8) !important"
+                >Grades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="reports.html"
+                style="color: rgba(255, 255, 255, 0.8) !important"
+                >Reports</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Header Section -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <h1 style="color: #2c3e50; font-weight: 600">Dashboard Overview</h1>
+          <p style="color: #7f8c8d; font-size: 1.1rem">
+            Welcome to the Student Affairs Management System - InnoTech
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div
+            class="card border-0 shadow-sm"
+            style="
+              background: linear-gradient(135deg, #667eea 0%, #0b0146 100%);
+            "
+          >
+            <div class="card-body text-white">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h3 class="fw-bold">1,244</h3>
+                  <p class="mb-0">Total Students</p>
+                </div>
+                <div style="font-size: 2.5rem; opacity: 0.7">
+                  <i class="fas fa-users"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div
+            class="card border-0 shadow-sm"
+            style="
+              background: linear-gradient(135deg, #f093fb 0%, #bb011a 100%);
+            "
+          >
+            <div class="card-body text-white">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h3 class="fw-bold">95</h3>
+                  <p class="mb-0">Active Courses</p>
+                </div>
+                <div style="font-size: 2.5rem; opacity: 0.7">
+                  <i class="fas fa-book"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div
+            class="card border-0 shadow-sm"
+            style="
+              background: linear-gradient(135deg, #4facfe 0%, #017980 100%);
+            "
+          >
+            <div class="card-body text-white">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h3 class="fw-bold">96%</h3>
+                  <p class="mb-0">Attendance Rate</p>
+                </div>
+                <div style="font-size: 2.5rem; opacity: 0.7">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div
+            class="card border-0 shadow-sm"
+            style="
+              background: linear-gradient(135deg, #7df1dc 0%, #01705c 100%);
+            "
+          >
+            <div class="card-body text-white">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h3 class="fw-bold">87%</h3>
+                  <p class="mb-0">Pass Rate</p>
+                </div>
+                <div style="font-size: 2.5rem; opacity: 0.7">
+                  <i class="fas fa-trophy"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card border-0 shadow-sm">
+            <div
+              class="card-header"
+              style="
+                background-color: #ffffff;
+                border-bottom: 1px solid #e9ecef;
+              "
+            >
+              <h5 class="mb-0" style="color: #2c3e50">Quick Actions</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <a
+                    href="students.html"
+                    class="btn btn-outline-primary w-100"
+                    style="border-radius: 10px; padding: 15px"
+                  >
+                    <i class="fas fa-user-plus me-2"></i>Add New Student
+                  </a>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <a
+                    href="courses.html"
+                    class="btn btn-outline-success w-100"
+                    style="border-radius: 10px; padding: 15px"
+                  >
+                    <i class="fas fa-plus-circle me-2"></i>Create Course
+                  </a>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <a
+                    href="grades.html"
+                    class="btn btn-outline-warning w-100"
+                    style="border-radius: 10px; padding: 15px"
+                  >
+                    <i class="fas fa-edit me-2"></i>Update Grades
+                  </a>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <a
+                    href="reports.html"
+                    class="btn btn-outline-info w-100"
+                    style="border-radius: 10px; padding: 15px"
+                  >
+                    <i class="fas fa-chart-bar me-2"></i>Generate Report
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Activities -->
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div
+              class="card-header"
+              style="
+                background-color: #ffffff;
+                border-bottom: 1px solid #e9ecef;
+              "
+            >
+              <h5 class="mb-0" style="color: #2c3e50">Recent Activities</h5>
+            </div>
+            <div class="card-body">
+              <div class="list-group list-group-flush">
+                <div class="list-group-item border-0" style="padding: 15px 0">
+                  <div class="d-flex align-items-center">
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          #667eea 0%,
+                          #01075e 100%
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        margin-right: 15px;
+                      "
+                    >
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1" style="color: #2c3e50">
+                        New student registered
+                      </h6>
+                      <p class="mb-0" style="color: #7f8c8d; font-size: 0.9rem">
+                        John Doe registered for Computer Science program
+                      </p>
+                    </div>
+                    <small style="color: #95a5a6">2 hours ago</small>
+                  </div>
+                </div>
+                <div class="list-group-item border-0" style="padding: 15px 0">
+                  <div class="d-flex align-items-center">
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          #f093fb 0%,
+                          #b1031a 100%
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        margin-right: 15px;
+                      "
+                    >
+                      <i class="fas fa-book"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1" style="color: #2c3e50">
+                        Course updated
+                      </h6>
+                      <p class="mb-0" style="color: #7f8c8d; font-size: 0.9rem">
+                        Advanced Mathematics syllabus has been updated
+                      </p>
+                    </div>
+                    <small style="color: #95a5a6">4 hours ago</small>
+                  </div>
+                </div>
+                <div class="list-group-item border-0" style="padding: 15px 0">
+                  <div class="d-flex align-items-center">
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(
+                          135deg,
+                          #6bdfe6 0%,
+                          #01858b 100%
+                        );
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        margin-right: 15px;
+                      "
+                    >
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <h6 class="mb-1" style="color: #2c3e50">
+                        Grades submitted
+                      </h6>
+                      <p class="mb-0" style="color: #7f8c8d; font-size: 0.9rem">
+                        Final grades for Physics 101 have been submitted
+                      </p>
+                    </div>
+                    <small style="color: #95a5a6">6 hours ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div
+              class="card-header"
+              style="
+                background-color: #ffffff;
+                border-bottom: 1px solid #e9ecef;
+              "
+            >
+              <h5 class="mb-0" style="color: #2c3e50">System Status</h5>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span style="color: #2c3e50">Database</span>
+                  <span class="badge bg-success">Online</span>
+                </div>
+                <div class="progress" style="height: 6px">
+                  <div class="progress-bar bg-success" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span style="color: #2c3e50">Server</span>
+                  <span class="badge bg-success">Online</span>
+                </div>
+                <div class="progress" style="height: 6px">
+                  <div class="progress-bar bg-success" style="width: 98%"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <span style="color: #2c3e50">Storage</span>
+                  <span class="badge bg-warning">75%</span>
+                </div>
+                <div class="progress" style="height: 6px">
+                  <div class="progress-bar bg-warning" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="bg-dark text-white text-center py-3 mt-5"
+      style="margin-top: 50px !important"
+    >
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 
+          <a
+            href="mailto:ahmadseneed@gmail.com"
+            style="text-decoration: none; color: inherit"
+          >
+           Ahmed Elsayed.
+          </a>
+
+          | All rights reserved. 
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
