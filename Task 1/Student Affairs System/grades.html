@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMS - Grades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #5a77f8 0%, #000e5f 100%);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="main.html" style="font-size: 1.5rem;">
+                <i class="fas fa-graduation-cap me-2"></i>SAMS - InnoTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html" style="color: rgba(255,255,255,0.8) !important;">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="students.html" style="color: rgba(255,255,255,0.8) !important;">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html" style="color: rgba(255,255,255,0.8) !important;">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="grades.html" style="color: white !important;">Grades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports.html" style="color: rgba(255,255,255,0.8) !important;">Reports</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Header Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 style="color: #2c3e50; font-weight: 600;">Grade Management</h1>
+                <p style="color: #7f8c8d; font-size: 1.1rem;">Manage and track student academic performance</p>
+            </div>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="row mb-4">
+            <div class="col-md-3 mb-3">
+                <select class="form-select" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                    <option>All Courses</option>
+                    <option>CS101 - Introduction to Computer Science</option>
+                    <option>MATH201 - Math 2</option>
+                    <option>ENG301 - Software Engineering</option>
+                    <option>BAS101 - Structure programming</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <select class="form-select" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                    <option>All Students</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <select class="form-select" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                    <option>All Semesters</option>
+                    <option>Fall</option>
+                    <option>Spring</option>
+                    <option>Summer</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <button class="btn btn-primary w-100" style="border-radius: 8px;">
+                    <i class="fas fa-filter me-2"></i>Apply Filters
+                </button>
+            </div>
+        </div>
+
+        <!-- Grade Statistics -->
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #667eea 0%, #0b0146 100%);">
+                    <div class="card-body text-white text-center">
+                        <h3 class="fw-bold">87.5%</h3>
+                        <p class="mb-0">Average Grade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #f093fb 0%, #bb011a 100%);">
+                    <div class="card-body text-white text-center">
+                        <h3 class="fw-bold">92%</h3>
+                        <p class="mb-0">Pass Rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #4facfe 0%, #017980 100%);">
+                    <div class="card-body text-white text-center">
+                        <h3 class="fw-bold">15%</h3>
+                        <p class="mb-0">A Grades</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #7df1dc 0%, #01705c 100%);">
+                    <div class="card-body text-white text-center">
+                        <h3 class="fw-bold">1,247</h3>
+                        <p class="mb-0">Total Grades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grades Table -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-header" style="background-color: #ffffff; border-bottom: 1px solid #e9ecef;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0" style="color: #2c3e50;">Student Grades</h5>
+                    <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#addGradeModal" style="border-radius: 8px;">
+                        <i class="fas fa-plus me-2"></i>Add Grade
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead style="background-color: #f8f9fa;">
+                            <tr>
+                                <th style="color: #2c3e50; font-weight: 600;">Student</th>
+                                <th style="color: #2c3e50; font-weight: 600;">Course</th>
+                                <th style="color: #2c3e50; font-weight: 600;">Assignment</th>
+                                <th style="color: #2c3e50; font-weight: 600;">Grade</th>
+                                <th style="color: #2c3e50; font-weight: 600;">Percentage</th>
+                                <th style="color: #2c3e50; font-weight: 600;">Date</th>
+                                <th style="color: #2c3e50; font-weight: 600;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #667eea 0%, #0b0146 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 10px; font-size: 0.8rem;">
+                                            JD
+                                        </div>
+                                        John Doe
+                                    </div>
+                                </td>
+                                <td><span class="badge bg-primary">CS101</span></td>
+                                <td style="color: #2c3e50;">Midterm Exam</td>
+                                <td><span class="badge bg-success">A</span></td>
+                                <td style="color: #2c3e50;">92%</td>
+                                <td style="color: #7f8c8d;">2025-01-15</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-1" style="border-radius: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger" style="border-radius: 5px;">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #f093fb 0%, #bb011a 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 10px; font-size: 0.8rem;">
+                                            JS
+                                        </div>
+                                        Jane Smith
+                                    </div>
+                                </td>
+                                <td><span class="badge bg-success">MATH201</span></td>
+                                <td style="color: #2c3e50;">Final Project</td>
+                                <td><span class="badge bg-warning">B+</span></td>
+                                <td style="color: #2c3e50;">87%</td>
+                                <td style="color: #7f8c8d;">2025-01-20</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-1" style="border-radius: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger" style="border-radius: 5px;">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #4facfe 0%, #017980 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 10px; font-size: 0.8rem;">
+                                            MJ
+                                        </div>
+                                        Mike Johnson
+                                    </div>
+                                </td>
+                                <td><span class="badge bg-warning">ENG301</span></td>
+                                <td style="color: #2c3e50;">Lab Report</td>
+                                <td><span class="badge bg-info">A-</span></td>
+                                <td style="color: #2c3e50;">90%</td>
+                                <td style="color: #7f8c8d;">2025-01-18</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-1" style="border-radius: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger" style="border-radius: 5px;">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 10px; font-size: 0.8rem;">
+                                            SB
+                                        </div>
+                                        Sarah Brown
+                                    </div>
+                                </td>
+                                <td><span class="badge bg-info">BAS101</span></td>
+                                <td style="color: #2c3e50;">Case Study</td>
+                                <td><span class="badge bg-success">A</span></td>
+                                <td style="color: #2c3e50;">95%</td>
+                                <td style="color: #7f8c8d;">2025-01-22</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-1" style="border-radius: 5px;">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger" style="border-radius: 5px;">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grade Distribution Chart -->
+        <div class="row mt-4">
+            <div class="col-lg-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header" style="background-color: #ffffff; border-bottom: 1px solid #e9ecef;">
+                        <h5 class="mb-0" style="color: #2c3e50;">Grade Distribution</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span style="color: #2c3e50;">A (90-100%)</span>
+                                <span style="color: #2c3e50;">15%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-success" style="width: 15%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span style="color: #2c3e50;">B (80-89%)</span>
+                                <span style="color: #2c3e50;">35%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-info" style="width: 35%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span style="color: #2c3e50;">C (70-79%)</span>
+                                <span style="color: #2c3e50;">30%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-warning" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span style="color: #2c3e50;">D (60-69%)</span>
+                                <span style="color: #2c3e50;">15%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-danger" style="width: 15%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span style="color: #2c3e50;">F (Below 60%)</span>
+                                <span style="color: #2c3e50;">5%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar bg-dark" style="width: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header" style="background-color: #ffffff; border-bottom: 1px solid #e9ecef;">
+                        <h5 class="mb-0" style="color: #2c3e50;">Quick Actions</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-3">
+                            <button class="btn btn-outline-primary" style="border-radius: 8px; padding: 12px;">
+                                <i class="fas fa-download me-2"></i>Export Grades Report
+                            </button>
+                            <button class="btn btn-outline-success" style="border-radius: 8px; padding: 12px;">
+                                <i class="fas fa-upload me-2"></i>Import Grades
+                            </button>
+                            <button class="btn btn-outline-warning" style="border-radius: 8px; padding: 12px;">
+                                <i class="fas fa-chart-bar me-2"></i>Generate Analytics
+                            </button>
+                            <button class="btn btn-outline-info" style="border-radius: 8px; padding: 12px;">
+                                <i class="fas fa-envelope me-2"></i>Send Grade Notifications
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Grade Modal -->
+    <div class="modal fade" id="addGradeModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #00086d 100%); color: white;">
+                    <h5 class="modal-title">Add New Grade</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #2c3e50; font-weight: 600;">Student</label>
+                            <select class="form-select" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                                <option>Select Student</option>
+                                <option>John Doe</option>
+                                <option>Jane Smith</option>
+                                <option>Mike Johnson</option>
+                                <option>Sarah Brown</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #2c3e50; font-weight: 600;">Course</label>
+                            <select class="form-select" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                                <option>Select Course</option>
+                                <option>CS101 - Introduction to Computer Science</option>
+                                <option>MATH201 - Math 2</option>
+                                <option>ENG301 - Software Engineering</option>
+                                <option>BAS101 - Structure programming</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #2c3e50; font-weight: 600;">Assignment Type</label>
+                            <input type="text" class="form-control" placeholder="e.g., Midterm Exam, Final Project" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label" style="color: #2c3e50; font-weight: 600;">Grade</label>
+                                <select class="form-select" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                                    <option>A+</option>
+                                    <option>A</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B</option>
+                                    <option>B-</option>
+                                    <option>C+</option>
+                                    <option>C</option>
+                                    <option>C-</option>
+                                    <option>D+</option>
+                                    <option>D</option>
+                                    <option>F</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label" style="color: #2c3e50; font-weight: 600;">Percentage</label>
+                                <input type="number" class="form-control" placeholder="85" min="0" max="100" style="border-radius: 8px; border: 1px solid #e9ecef;">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" style="color: #2c3e50; font-weight: 600;">Comments</label>
+                            <textarea class="form-control" rows="3" placeholder="Additional comments..." style="border-radius: 8px; border: 1px solid #e9ecef;"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 8px;">Cancel</button>
+                    <button type="button" class="btn btn-success" style="border-radius: 8px;">
+                        <i class="fas fa-save me-2"></i>Save Grade
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5" style="margin-top: 50px !important;">
+        <div class="container">
+            <p class="mb-0">
+          &copy; 2025 
+          <a
+            href="mailto:ahmadseneed@gmail.com"
+            style="text-decoration: none; color: inherit"
+          >
+           Ahmed Elsayed.
+          </a>
+
+          | All rights reserved. 
+        </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html> 
